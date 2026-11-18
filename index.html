@@ -1,17 +1,210 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marlon Ramos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlon Ramos · Physicist & Geoscientist</title>
+    <meta name="description" content="Portfolio of Marlon Andrés Ramos Juliao: physics, earth observation, GeoAI and geospatial data infrastructure.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <nav>...</nav>
-  <header>Nombre, subtítulo, botones</header>
-  <section id="about">...</section>
-  <section id="projects">...</section>
-  <section id="experience">...</section>
-  <footer>...</footer>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">marlon.ramos</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Physics · Earth Observation · GeoAI</div>
+    <h1>Marlon Andrés<br>Ramos Juliao</h1>
+    <p class="lead">Physicist and geoscientist building data pipelines and infrastructure for scientific and geospatial data.
+      MSc student in GeoAI at ITC, University of Twente.</p>
+    <div class="btns">
+      <a class="btn primary" href="cv.pdf" target="_blank">Download CV</a>
+      <a class="btn" href="https://github.com/YOUR-USER" target="_blank">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/ma-ramosj/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="soft">
+  <div class="wrap">
+    <h2>About</h2>
+    <h3 class="title">From physics to production data systems</h3>
+    <div class="about">
+      <div>
+        <p>I hold a double BSc in Physics and Geosciences from Universidad de los Andes (Colombia), where I worked on
+          infrared stellar spectroscopy and automated lineament mapping from remote sensing data.</p>
+        <p>At Esri Colombia I spent two years administering and troubleshooting ArcGIS Enterprise deployments for
+          international clients: servers, enterprise databases, logs and automation. I later led a consulting migration
+          of 220+ services to Google Cloud.</p>
+        <p>I am now an MSc student in Geo-Information Science and Earth Observation (GeoAI) at ITC, University of Twente,
+          on an ITC Excellence Scholarship. I am interested in applying scientific computing and data engineering to
+          large-scale experiments.</p>
+      </div>
+      <ul class="facts">
+        <li><b>220+</b><span>map services migrated to Google Cloud</span></li>
+        <li><b>600+</b><span>enterprise support cases resolved, 95%+ satisfaction</span></li>
+        <li><b>4.01 / 5.00</b><span>combined GPA, double BSc Physics + Geosciences</span></li>
+        <li><b>C1</b><span>English, IELTS 7.5</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <h3 class="title">Selected work</h3>
+    <div class="grid">
+
+      <!-- Placeholder for the CMS Open Data project: fill in when done -->
+      <article class="card upcoming">
+        <div class="meta">2026 · In progress</div>
+        <h4>Z boson mass reconstruction with CMS Open Data</h4>
+        <p>Selecting dimuon events from public CMS collision data and fitting the invariant mass peak of the Z boson.</p>
+        <div class="tags"><span>Python</span><span>uproot</span><span>ROOT</span><span>Particle physics</span></div>
+        <div class="links"><a href="https://github.com/YOUR-USER/cms-zboson" target="_blank">Code →</a></div>
+      </article>
+
+      <article class="card">
+        <div class="meta">2026 · Consulting</div>
+        <h4>Enterprise GIS migration to Google Cloud</h4>
+        <p>Migrated 220+ map services between ArcGIS Enterprise versions on a new cloud deployment, with an automated
+          Python publication pipeline and pandas-based inventory reconciliation.</p>
+        <div class="tags"><span>Python</span><span>pandas</span><span>PostgreSQL</span><span>Linux</span><span>GCP</span></div>
+      </article>
+
+      <article class="card">
+        <div class="meta">2024 · BSc Physics thesis</div>
+        <h4>Infrared spectrum of the star Sheliak</h4>
+        <p>[One or two lines: data, analysis method, tools, main result.]</p>
+        <div class="tags"><span>Spectroscopy</span><span>Astrophysics</span><span>Data analysis</span></div>
+        <div class="links"><a href="https://hdl.handle.net/1992/73251" target="_blank">Thesis →</a></div>
+      </article>
+
+      <article class="card">
+        <div class="meta">2024 · BSc Geosciences thesis</div>
+        <h4>Automatic lineament density mapping for mineral exploration</h4>
+        <p>Automated lineament extraction from remote sensing data in Santa Isabel–Líbano (Colombia) and evaluated it as
+          a mineral exploration indicator.</p>
+        <div class="tags"><span>Remote sensing</span><span>Image processing</span><span>Geology</span></div>
+        <div class="links"><a href="https://hdl.handle.net/1992/73233" target="_blank">Thesis →</a></div>
+      </article>
+
+      <article class="card">
+        <div class="meta">2024 · EAGE GET, Rotterdam</div>
+        <h4>Remote sensing for white hydrogen reservoir detection</h4>
+        <p>Poster on detecting potential natural hydrogen reservoirs in the Ginebra Ophiolitic Complex using satellite
+          imagery and ArcGIS.</p>
+        <div class="tags"><span>Remote sensing</span><span>Energy transition</span><span>ArcGIS Pro</span></div>
+      </article>
+
+      <article class="card">
+        <div class="meta">2024 · Esri Colombia</div>
+        <h4>Delfos: data platform on violence in Colombia</h4>
+        <p>Technical delivery of dashboards, repositories and data integration for a national-scale analysis of violence.</p>
+        <div class="tags"><span>Data integration</span><span>Dashboards</span><span>ArcGIS</span></div>
+      </article>
+
+      <article class="card">
+        <div class="meta">2024 · Esri Users Conference</div>
+        <h4>AR geospatial apps for historical tourism</h4>
+        <p>Augmented-reality applications built with ArcGIS Maps SDK for Unity, presented at the Esri Colombia Users
+          Conference.</p>
+        <div class="tags"><span>Unity</span><span>C#</span><span>AR</span><span>3D GIS</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="soft">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <h3 class="title">Where I have worked</h3>
+    <div class="timeline">
+      <div class="job">
+        <div class="head"><h4>GIS Infrastructure Consultant</h4><span class="when">Jun – Aug 2026</span></div>
+        <div class="org">Servinformación, for Instituto SINCHI</div>
+        <ul>
+          <li>Cloud migration of 220+ services with an automated Python pipeline.</li>
+          <li>Debugged DNS, SSL and database catalogue issues across a 4-machine deployment.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>GIS Support Analyst, Enterprise Core team</h4><span class="when">Dec 2024 – 2026</span></div>
+        <div class="org">Esri Colombia</div>
+        <ul>
+          <li>600+ support cases for international clients, 95%+ satisfaction.</li>
+          <li>ArcGIS Enterprise administration, SQL diagnostics, log analysis, migrations.</li>
+          <li>Cut resolution time by 45% through templates and automation.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>GIS Professional (Junior)</h4><span class="when">Jan – Dec 2024</span></div>
+        <div class="org">Esri Colombia</div>
+        <ul>
+          <li>Delfos project, LiDAR building extraction, maps for national publications.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>Teaching Assistant, Physics and Geosciences</h4><span class="when">Aug 2021 – Dec 2023</span></div>
+        <div class="org">Universidad de los Andes</div>
+        <ul>
+          <li>Physics I & II, Modern Physics, Remote Sensing, GNSS, Seismology, Geology.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <h3 class="title">Toolbox</h3>
+    <div class="skills">
+      <div class="skill"><h4>Programming</h4><div class="tags">
+        <span>Python</span><span>pandas</span><span>SQL</span><span>Bash</span><span>C++</span><span>Java</span><span>C#</span><span>MATLAB</span></div></div>
+      <div class="skill"><h4>Systems</h4><div class="tags">
+        <span>Linux</span><span>Git</span><span>PostgreSQL</span><span>Google Cloud</span><span>ArcGIS Enterprise</span></div></div>
+      <div class="skill"><h4>Earth observation</h4><div class="tags">
+        <span>Sentinel-2</span><span>LiDAR</span><span>ArcGIS Pro</span><span>QGIS</span><span>SEISAN</span><span>SAC</span></div></div>
+      <div class="skill"><h4>Languages</h4><div class="tags">
+        <span>Spanish · native</span><span>English · C1 (IELTS 7.5)</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="soft contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <h3 class="title">Let's talk</h3>
+    <p>Open to research internships and collaborations in scientific computing, earth observation and data infrastructure.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:marjst25@gmail.com">marjst25@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/ma-ramosj/" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/YOUR-USER" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Marlon Andrés Ramos Juliao · Enschede, Netherlands</footer>
+
 </body>
 </html>
